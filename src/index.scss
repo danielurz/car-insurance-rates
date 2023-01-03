@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+ul {
+    list-style-type: none;
+}
+
+$color: #585AEC;
+
+body {
+  background-image: linear-gradient(to right, blue -100%,rgb(106, 16, 158));
+}
+
+#App {
+  padding-bottom: 50px;
+}
+
+@media (max-width:650px) {
+  #App {
+    margin: auto;
+    width: 90%;
+  }
+} 
+
+#Header {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+#Main {
+  margin: auto;
+  width: 600px;
+  margin-top: 50px;
+}
+
+#Formulario {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  .box {
+    margin-bottom: 30px;
+    label {
+      text-transform: uppercase;
+      color: gray;
+      letter-spacing: 1px;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      display: block;
+    }
+    select {
+      display: block;
+      width: 100%;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    .ratio {
+      display: flex;
+      gap: 15px;
+      & > div {
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        label {
+          margin: 0;
+          text-transform: none;
+        }
+      }
+    }
+  }
+  #Submit {
+    display: block;
+    padding: 10px;
+    background-color: $color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center; 
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+  }
+}
+
+#Result {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  .title {
+    width: 30%;
+    text-align: center;
+  }
+  .respuesta {
+    width: 70%;
+    span {
+      font-weight: bold;
+    }
+    #quote {
+      margin-top: 5px;
+      font-size: 1.1em;
+    }
+  }
+}
+
+#Error {
+  background-color: #c70303;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
